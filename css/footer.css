@@ -1,0 +1,81 @@
+footer {
+  background-color: rgb(255, 254, 254);
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  border: 0px;
+}
+
+/* News-letter */
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.footer-container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Social Button */
+.social-buttons {
+  background-color: rgb(255, 251, 251);
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.icon-button .icon-twitter {
+  color: #4099ff;
+}
+.icon-button .icon-facebook {
+  color: #3b5998;
+}
+.icon-button .icon-linkedin {
+  color: #3777d6;
+}
+
+/* .icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-linkedin {
+   color: white; */
+}
+
+

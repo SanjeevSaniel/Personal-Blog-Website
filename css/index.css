@@ -1,0 +1,163 @@
+@import "nav-bar.css";
+@import "card.css";
+@import "blog-post.css";
+@import "footer.css";
+
+body {
+  background-color: rgb(236, 236, 236);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+/* Smaller sized screen */
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 30px 50px 150px 150px 100px;
+  grid-template-areas:
+    "hd hd"
+    "card card"
+    "main sc1"
+    "main sc2"
+    "ft ft";
+  grid-gap: 5px;
+}
+
+/* Medium sized Screens */
+@media (min-width: 500px) and (max-width: 899px) {
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 60px 100px 300px 300px 200px;
+    grid-template-areas:
+      "hd hd hd"
+      "card card card"
+      "main main sc1"
+      "main main sc2"
+      "ft ft ft";
+    grid-gap: 5px;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 900px) {
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 60px 100px 300px 300px 200px;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "card card card card card card"
+      "main main main main sc1 sc1"
+      "main main main main sc2 sc2"
+      "ft ft ft ft ft ft";
+    grid-gap: 5px;
+  }
+}
+
+/* Side Content */
+.side-content1 {
+  grid-area: sc1;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.side-content2 {
+  grid-area: sc2;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+#two {
+  grid-area: sc1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/6/kashmir2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: azure;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+#three {
+  grid-area: sc2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/9/ganges3.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: azure;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* Main Content */
+.content {
+  grid-area: main;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+input[type="submit"].info {
+  font-size: 1em;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #e54b4b;
+  border: 1px solid #e54b4b;
+  color: #fffaf0;
+  transition: all 0.3s;
+  border: none;
+  width: min-content;
+}
+
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+#four {
+  grid-area: main;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/1/Taj Mahal.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: beige;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
